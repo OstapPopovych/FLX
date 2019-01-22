@@ -1,0 +1,158 @@
+
+ @media print {
+	
+	@page {
+		margin-top: 2cm;
+	}
+	.tm-sidebar {
+		display: none; 
+	}
+	.flex-2-col {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+
+    }
+    .box {
+    	display: none; 
+    }
+    .id {
+    	display: none; 
+    }
+    .contact-form { 
+    	display: none; 
+    }
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .tm-banner { 
+        height: 200px;
+        padding: unset;
+    }
+    body {
+        background: transparent;
+        padding-top: 0;
+    }
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .tm-sidebar,
+    #about,
+    section:not(:first-of-type) {
+        display: none;
+    }
+    .pad {
+        padding: 0 0 0 20px;
+    }
+}
+section >.flex-2-col {
+    display: flex;
+    align-items: center;
+
+    }
+.tm-content-box:not(:empty)::before{
+	content: "";
+    position: absolute;
+    top: 0;
+	left: 0;
+    border-top: 35px solid #87cefa;
+    border-right: 230px solid transparent;
+    z-index: 2;
+}
+.tm-team-description-container {
+    flex-basis: 100rem;
+    max-width: 100%;
+    }
+
+.tm-section-title-box:hover {
+        background: #87cefa;
+        color: #fff;
+        font-weight: bold;
+    }
+
+p::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+   }
+ 
+.tm-sidebar, .tm-content-header, section:not(:first-of-type), section:first-of-type > div { 
+    box-shadow: 2px 2px 2px 2px #c4c4c4;
+
+  }
+
+.tm-banner{
+    border: 30px solid #eee;
+    padding: 0;
+
+   }
+
+#tmCarousel .flex-item .tm-section-title{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2+p {
+    font-style: italic;
+  }
+
+p.tm-section-description {
+    text-indent: 25px; line-height: 30px;
+   }
+   
+.heading a { 
+    color: #0e0d0d;
+}
+
+.heading a.text:after {
+    content: "New"; 
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    }
+
+.heading a:visited {
+    text-decoration: underline #141414 ; 
+
+    }
+.heading a:hover{
+    color: #87cefa;
+    text-decoration: underline #87cefa double;
+    }
+.tm-nav-item:hover{
+    background-color: #dbdbdb;
+}
+
+.boxes .box-work:nth-child(even){
+    background-color: #ededed;
+  }
+.boxes .box-work{
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    padding-top:0px;
+  }
+.mandatory-field::after{
+    content: "*";
+    color: #ff0000;
+    font-weight: bold;
+}
+.btn{
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #4db2ec;
+    border-radius:0px;
+    background-color: #ffff;
+    color: #4db2ec;
+
+}
+.btn:hover{
+    border: 1px solid #4db2ec;
+    border-radius:0px;
+    background-color: #4db2ec;
+    color: #ffff;
+
+}
+
